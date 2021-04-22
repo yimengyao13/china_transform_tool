@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/china_transform_tool" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>

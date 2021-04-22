@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChinaTransformToolDialogBase</class>
+ <widget class="QDialog" name="ChinaTransformToolDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>China Transform Tool</string>
+  </property>
+  <widget class="QDialogButtonBox" name="button_box">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>输入文件：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>输出文件：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>输入坐标：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>219</x>
+     <y>100</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>输出坐标：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_InPut">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>30</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_OutPut">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>60</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_InPut">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>30</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>…</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_OutPut">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>60</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>…</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_InWGS84">
+   <property name="geometry">
+    <rect>
+     <x>41</x>
+     <y>138</y>
+     <width>81</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>WGS84</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_InGCJ02">
+   <property name="geometry">
+    <rect>
+     <x>41</x>
+     <y>161</y>
+     <width>81</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>GCJ02</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_InBD09">
+   <property name="geometry">
+    <rect>
+     <x>41</x>
+     <y>186</y>
+     <width>81</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>BD09</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_OutWGS84">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>138</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>WGS84</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup_2</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_OutGCJ02">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>163</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>GCJ02</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup_2</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_OutBD09">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>188</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>BD09</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup_2</string>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>ChinaTransformToolDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>ChinaTransformToolDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>
